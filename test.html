@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body bgcolor=cyan>
+<div class="div1">
+  <h2>hedaer</h2>
+  </div>
+  <div class="div2">
+    <h1>body</h1>
+    </div>
+    <div class="div3">
+      <h2>fotter</h2>
+      </div>  <article>
+      <header>
+        <h1>HEADER</h1>
+        <NAV>
+          NAVIGATION
+        </NAV>
+      </header>  </article>
+
+        <section>
+          section here
+        </section>
+        <section>
+          section here
+        </section>
+        <section>
+          section here
+        </section>
+        <section>
+          section here
+        </section>
+        <aside>
+          SIDE MENU
+        </aside>
+        <footer>
+          FOTTER PART IN WEBPAGE
+        </footer>
+        <form>
+          <h2>NAME</h2><br />
+          <input type="text" value="uname" name="uname" /><BR />
+          <H2>EMAIL:</H2><BR />
+          <input type="text" name="uemail" value="uemail" /><br />
+          <input type="button" id="button1" value="SetDataInLocalStorage" />
+          <input type="button" value="GetDataFromLocalStroage"  id="button2" />
+        </form>
+        <script type="text/javascript">
+          document.getElementById("buttion1").addEventListener("click",fun1);
+          function fun1(){
+            var uname = document.getElementById("uname").value;
+            var uemail = document.getElementById("uemail").value;
+
+            localStroage.uname=uname;
+            localStroage.uemail=uemail;
+            document.getElementById("uname").value="";
+            document.getElementById("uemail").value="";
+
+            alert("data stored in local stroage");
+          }
+          document.getElementById("buttion2").addEventListener("click",fun2);
+          function fun2(){
+          var uname = localStroage.uname;
+          var uemail = localStroage.uemail;
+          document.getElementById("uname").value=uname;
+          document.getElementById("uemail").value=uemail;
+
+        }
+        </script>
+
+  </body>
+</html>

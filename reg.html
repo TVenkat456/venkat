@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor=cyan>
+    <form method="post" action="hair.jpg">
+      <fieldset>
+<legend>
+  APPLICATION FORM
+</legend>
+
+      <table ALIGN="CENTER">
+        <tr>
+          <th colspan="3">
+            <h2><U>USER DETAILS</U></h2>
+            </th>
+          </tr>
+      <tr>
+        <th>
+          USER NAME:
+          </th>
+        <td>
+          <input type="text" name="uname" autocomplete="off" maxlength="20" tabindex="1" placeholder="enter your name" autofocus="autofocus" required="required" pattern="^[a-zA-Z]*$">
+
+          </td></tr>
+          <TR>
+            <th>
+              <label for="uf">LAST NAME</label>
+            </th>
+            <td>
+              <input type="TEXT" placeholder="enter LAST name" maxlength="25" id="uf"/>
+            </td>
+          </TR>
+          <tr>
+            <th>
+              MOBILE NO:
+              </th>
+              <td>
+                  <input type="number" name="unum" value="" maxlength="10" placeholder="enter mobile number" required="required">
+                  </td>
+            </tr>
+            <tr>
+              <th>
+              ANOTHER  MOBILE NO:
+                </th>
+                <td>
+                    <input type="text" name="unum" value="" maxlength="10" pattern="^[0-9]*$" placeholder="enter mobile number" required="required">
+                    </td>
+              </tr>
+          <tr>
+            <th>
+              Email:
+              </th>
+              <td>
+                  <input type="email" name="umail" maxlength="25" tabindex="2" placeholder="enter email id">
+                  </td>
+            </tr>
+          <tr>
+            <Th>
+              CREATE PASSWORD:
+              </Th>
+              <TD>
+                <input type="PASSWORD" name="UPWD" value="" maxlength="25" tabindex="3" placeholder="enter password to create">
+                </TD>
+            </tr>
+            <tr>
+              <Th>
+                CONFIRM PASSWORD:
+                </Th>
+                <TD>
+                  <input type="PASSWORD" name="UPWD" value="" size="25" maxlength="25" tabindex="4" placeholder="reenter the password to confirm">
+                  </TD>
+              </tr>
+              <TR>
+                <th>
+                  DATE OF BIRTH:
+                  </th>
+                  <TD>
+                    <input type="date" name="udob" required="required" value="17-07-2001" max="2023-07-31"min="2001-01-01"tabindex="5">
+                    </TD>
+                </TR>
+                <TR>
+                  <th>
+                    TIME OF BIRTH:
+                    </th>
+                    <TD>
+                      <input type="time" name="utime" value="" tabindex="6">
+                      </TD>
+                  </TR>
+                  <TR>
+                    <th>
+                      TODAY DATE AND TIME:
+                      </th>
+                      <TD>
+                        <input type="datetime-local" name="udati" value="">
+                        </TD>
+                    </TR>
+                    <TR>
+                      <th>
+                        SALARY:
+                        </th>
+                        <TD>
+                          <input type="number" name="uSA" value="" min="30000" max="50000">
+                          </TD>
+                      </TR><TR>
+                        <th>
+                          AGE:
+                          </th>
+                          <TD>
+                            <input type="number" name="uage" step="2"value="" min="15" max="35">
+                            </TD>
+                        </TR>
+            <tr>
+              <th>
+                GENDER:
+              </th>
+              <TD>
+                <input type="radio" name="ugen"  value="male">MALE
+                <input type="radio" name="ugen" required="required" value="female" checked="checked" tabindex="7">FEMALE
+                <input type="radio" name="ugen" value="both">BOTH
+              </TD>
+            </tr>
+
+              <TR>
+                <TH>
+                  USER QUALIFICATION:
+                  </TH>
+                  <TD>
+                      <input type="checkbox" name="UQUAL" value="BSC">BSC
+                      <input type="checkbox" name="UQUAL" value="BTECH" checked="checked" tabindex="8">BTECH
+                      <input type="checkbox" name="UQUAL" value="MTECH">MTECH
+                      <input type="checkbox" name="UQUAL" value="MSC">MSC
+                      <input type="checkbox" name="UQUAL" value="PhD">PHD
+                      <input type="hidden" name="location" value="hyd" />
+                      </TD>
+                  </TR>
+                  <TR>
+                    <th>
+                      USER TECHNOLOGIES:
+                    </th>
+                    <TD>
+                      <select NAME="utech" size="3" multiple="multiple">
+                        <option value="C">C</option>
+                        <optgroup label="python">python
+                          <option value="corepython">corepython</option>
+                          <option value="advpython">advpython</option>
+                        </optgroup>
+                        <optgroup label="UI">
+                          <option value="html">html5</option>
+                          <option value="css">css</option>
+                        </optgroup>
+                        <option value="corejava">corejava</option>
+                      </select>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <Th>
+                      JOB ROLE:
+                    </Th>
+                    <TD>
+                      <select value="urole" >
+                        <optgroup label="ROLE">
+                          <option value="WEBDEVELOPMENT">WEBDEVELOPMENT</option>
+                          <option VALUE="TESTING">
+                            TESTING
+                          </option>
+                        </optgroup>
+                      </select>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <th>
+                    SELECT  FOVARITE COLOR:
+                      </th>
+                      <TD>
+                        <input type="color" name="ucolor" value="BLUE">
+                        </TD>
+                    </TR>
+                  <tr>
+                    <th>
+                      SELECT FILE:
+                      </th>
+                      <TD>
+                        <input type="file" name="ufile" multiple="multiple"value="file1">
+                        </TD>
+                    </tr>
+                    <tr>
+                      <th>
+                        ENTER ASI:
+                      </th>
+                      <TD>
+                        <input type="TEXT" name="result" LIST="asi" placeholder="enter asi then you can see the result" size=45 />
+                        <datalist id="asi">
+                          <option value="asi"></option>
+                          <option value="asi lingamgunta"></option>
+                          <option value="asi software"></option>
+                          <option value="asi Technologies"></option>
+                          <option value="asi nene"></option>
+                          <option value="asi asritha"></option>
+                          <option value="asi loves"></option>
+                        </datalist>
+                      </TD>
+                    </tr>
+
+                            <TR>
+                              <th>
+                                COURSE JOINING MONTH:
+                                </th>
+                                <TD>
+                                  <input type="month" name="umonth" value="" tabindex="9">
+                                  </TD>
+                              </TR>
+                              <TR>
+                                <th>
+                                  COURSE JOINING WEEK:
+                                  </th>
+                                  <TD>
+                                    <input type="week" name="uWEEK" value="" tabindex="8">
+                                    </TD>
+                                </TR>
+                                <TR>
+                                  <th>
+                                    SEARCH:
+                                    </th>
+                                    <TD>
+                                      <input type="search" name="user" value="" maxlength="25" tabindex="10" placeholder="search">
+                                      </TD>
+                                  </TR>
+                                  <TR>
+                                    <TH>
+                                      YOUR RANGE CODEING:
+                                    </TH><TD>
+                                      <input type="range"  required="required" name="urange" min=0 max=10 >
+                                    </TD>
+                                  </TR>
+                                  <TR>
+                                    <TH>
+                                      WEBSITE:
+                                    </TH>
+                                    <TD>
+                                      <input type="url" name="uurl" maxlength="25" placeholder="enter valid url only" />
+                                    </TD>
+                                  </TR>
+                                  <tr>
+                                    <th>
+                                      COURSE FEE
+                                    </th>
+                                    <TD>
+                                      <input type="text" name="ufee" value="7000.00" readonly="readonly" />
+                                    </TD>
+                                  </tr>
+                                  <tr>
+                                    <th>
+                                      MATERIAL FEE
+                                    </th>
+                                    <TD>
+                                      <input type="text" name="uMfee" value="999.00" disabled="disabled" />
+                                    </TD>
+                                  </tr>
+                                  <tr>
+                                    <th>
+                                      REMARKS:
+                                    </th>
+                                    <Td>
+                                      <textarea name="urem" cols="50" rows="5"></textarea>
+                                    </td>
+                                  </tr>
+                                  <TR>
+                                        <th>
+                                          </th>
+                                            <td>
+                                              <input type="submit" name="" value="REGISTRATION">
+                                              <input type="button" name="" value="BUTTON">
+                                              <input type="RESET" name="" value="RESET">
+                                                </td>
+                                              </TR>
+                                              <tr>
+                                                <th>
+                                                </th>
+                                                <td>
+                                                  <input type="image" src="asichinna.jpg" width="90PX" height="50PX">
+                                                </td>
+                                              </tr>
+
+
+      </table>  </fieldset>
+      </form>
+  </body>
+</html>
